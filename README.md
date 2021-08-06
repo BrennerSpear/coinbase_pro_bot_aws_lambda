@@ -9,7 +9,7 @@ Say hi on twitter: [@brennerspear](https://www.twitter.com/brennerspear)
 
 ### Setup
 
-#### Create Coinbase Pro API key
+### Create Coinbase Pro API key
 Try this out on Coinbase Pro's sandbox first. The sandbox is a test environment that is not connected to your actual fiat or crypto balances.
 
 Log into your Coinbase/Coinbase Pro account in their test sandbox:
@@ -19,7 +19,7 @@ Find and follow existing guides for creating an API key. Only grant the "Trade" 
 
 While you're in the sandbox UI, fund your fiat account by transferring from the absurd fake balance that sits in the linked Coinbase account (remember, this is all just fake test data; no real money or crypto goes through the sandbox).
 
-#### Create a lambda function
+### Create a lambda function
 [AWS Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions)
 
 1. click "Create Function"
@@ -29,7 +29,7 @@ While you're in the sandbox UI, fund your fiat account by transferring from the 
 5. click "Upload from" --> .zip file
 6. upload the zip in this repo: `my-lambda-deployment-package.zip`
 
-#### Configure your lambda function
+### Configure your lambda function
 
 1. Click "Configuration"
 2. Click "Environment variables"
@@ -51,7 +51,7 @@ click save
 
 We're setting the environment as `SANDBOX` for now so we can do a test run first
 
-#### Try a sandbox test run
+### Try a sandbox test run
 
 Click "Test"
 Add an example event with the following JSON data (The sandbox only has BTC-USD)
@@ -68,7 +68,7 @@ Click "Test"
 
 It should give a successful run, and show the output in the dropdown
 
-#### Try a production test run
+### Try a production test run
 
 Go back to Configuration --> Environment variables --> edit
 
@@ -76,7 +76,7 @@ Change  `ENV` to `PRODUCTION`
 
 Save and go back to test. Run another test. This time it will actually be buying btc from your real account!
 
-#### Scheduling your recurring buys
+### Scheduling your recurring buys
 
 1. Search in the top search bar for "EventBridge" where you'll [create a rule](https://console.aws.amazon.com/events/home?region=us-east-1#/rules/create)
 2. name your rule (I named one of mine "buy-eth-every-hour)
