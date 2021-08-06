@@ -1,0 +1,14 @@
+## These go in the configuration section of the Lambda
+
+## Start with this and make sure it's working
+ENV = SANDBOX
+## Switch to this when you're ready
+ENV = PRODUCTION
+
+CBPRO_PASSPHRASE_SANDBOX = xxx
+CBPRO_API_KEY_SANDBOX = xxx
+CBPRO_SECRET_KEY_SANDBOX = xxx
+
+CBPRO_PASSPHRASE = xxx
+CBPRO_API_KEY = xxx
+CBPRO_SECRET_KEY = xxx

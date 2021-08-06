@@ -1,0 +1,11 @@
+// This goes in the CloudWatch in target section of a rule as a "Constant (JSON text)"
+
+{
+  "market_name": "ETH-USD",
+  "order_side": "BUY",
+  "amount": "10",
+  "amount_currency": "USD"
+}
+
+
+
