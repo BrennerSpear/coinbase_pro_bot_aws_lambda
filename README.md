@@ -49,7 +49,16 @@ CBPRO_SECRET_KEY = xxx
 
 click save
 
-We're setting the environment as `SANDBOX` for now so we can do a test run first
+(We're setting the environment as `SANDBOX` for now so we can do a test run first)
+
+
+We also need to change the timeout of the lambda function
+
+Within "Configuration", go to:
+1. Click "General Configuration"
+2. Click "edit" on the right
+3. Edit timeout to 0 min 10 sec
+4. Click "Save"
 
 ### Try a sandbox test run
 
